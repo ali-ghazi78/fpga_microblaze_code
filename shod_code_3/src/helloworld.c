@@ -109,14 +109,15 @@ int main(void)
 	while(1){
 
 		mpu_fuse_data(OF_X,OF_Y,OF_Z);
-		my_put_int(make_zero_degree(180,degree_x));
-		my_putchar('\t');
-		my_put_int(make_zero_degree(180,deg_accel_x_2));
-		my_putchar('\t');
 		my_put_int(make_zero_degree(180,fused_x));
+		my_putchar('\t');
+		my_put_int(make_zero_degree(180,fused_y));
+		my_putchar('\t');
+		my_put_int(make_zero_degree(180,fused_z));
 		my_putchar('\n');
 		turn_led(0);
 
+		delay_ms(10);
 	}
 	return 0;
 
@@ -243,7 +244,6 @@ void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z)
 	deg_accel_y_2=360-deg_accel_y_2;
 	deg_accel_z_2=360-deg_accel_z_2;
 
-	exception("counter",counter_mpu,0);
 	timer_off();
 	//////////x
 	if(fused_x>deg_accel_x_2)
@@ -306,19 +306,19 @@ void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z)
 	counter_mpu=0;
 	timer_set_up(5000,LOOP_COUNT);
 	timer_on();
-	while((fused_x>360)||(fused_y>360))
+	while((fused_x>360)||(fused_y>360)||(fused_z>360))
 	{
 		if(fused_x>360){
-			exception("fused_x",fused_x,0);
-			my_putchar('c');
+			//exception("fused_x",fused_x,0);
+			//my_putchar('c');
 			fused_x=fused_x-360;
 		}
 		if(fused_y>360){
-			my_putchar('d');
+			//my_putchar('d');
 			fused_y=fused_y-360;
 		}
 		if(fused_z>360){
-			my_putchar('d');
+			//my_putchar('d');
 			fused_z=fused_z-360;
 		}
 	}
