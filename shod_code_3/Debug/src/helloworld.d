@@ -16,7 +16,7 @@ src/helloworld.d: ../src/helloworld.c ../src/my_lib/delay.h \
  ../../shod_code_3_bsp/microblaze_0/include/xil_exception.h \
  ../src/my_lib/delay.h ../src/my_lib/led.h ../src/my_lib/i2c.h \
  ../../shod_code_3_bsp/microblaze_0/include/mblaze_nt_types.h \
- ../src/my_lib/usart.h \
+ ../src/my_lib/mpu6050.h ../src/my_lib/i2c.h ../src/my_lib/usart.h \
  ../../shod_code_3_bsp/microblaze_0/include/xil_types.h \
  ../src/my_lib/timer.h
 
@@ -61,6 +61,10 @@ src/helloworld.d: ../src/helloworld.c ../src/my_lib/delay.h \
 ../src/my_lib/i2c.h:
 
 ../../shod_code_3_bsp/microblaze_0/include/mblaze_nt_types.h:
+
+../src/my_lib/mpu6050.h:
+
+../src/my_lib/i2c.h:
 
 ../src/my_lib/usart.h:
 

@@ -11,6 +11,10 @@
 #include "i2c.h"
 #include "math.h"
 
+#define GRYRO_SCALE 131
+#define TIME	0.0001	 				//base on ur timer clock 10khz
+#define LOOP_COUNT 256					//top of counter
+
 #define MPU_ADDRESS 0xD0
 #define MPU_WHO_AM 0x75
 #define GYRO_CONFIG 0x1B
@@ -38,20 +42,21 @@ float a_x,a_y,a_z;
 float degree_x,degree_y,degree_z;
 float fused_x,fused_y,fused_z;
 
-u16 mpu6050_get_accel_z();
-u16 mpu6050_get_accel_x();
-u16 mpu6050_get_accel_y();
+int mpu6050_get_accel_z();
+int  mpu6050_get_accel_x();
+int mpu6050_get_accel_y();
 
-u16 mpu6050_get_gyro_z();
-u16 mpu6050_get_gyro_y();
-u16 mpu6050_get_gyro_x();
+int mpu6050_get_gyro_z();
+int mpu6050_get_gyro_y();
+int mpu6050_get_gyro_x();
 
-u8 mpu6050_get_name();
+char mpu6050_get_name();
 
 void mpu6050_init();
 void mpu_calibrate(int *OFFSET_X,int *OFFSET_Y,int *OFFSET_Z);
 void exception(unsigned char *string,float number,int div);
-
+float make_zero_degree(int zero,int degree);
+void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z);
 
 
 void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z);
