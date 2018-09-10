@@ -309,11 +309,7 @@ void mpu9150_degree_mag(int *_angle_z)
 //		my_put_int(mag_y);//single
 //		my_putchar('\t');
 //		turn_led(0);
-//		my_put_int(mag_x);//single
-//		my_putchar('\t');
-//
-//		my_put_int(mag_y);//single
-//		my_putchar('\t');
+
 		if(mag_y<0)
 			mag_y=mag_y+FIRST_NAGATIVE_Y_NUM;//this is the first negative number after zero
 		if(mag_x<0)
@@ -372,11 +368,18 @@ void mpu9150_degree_mag(int *_angle_z)
 //		my_put_int(angle_z);//data is ready
 //		my_putchar('\t');
 
+//		my_put_int(mag_x);//single
+//		my_putchar('\t');
 
-
+//		my_put_int(mag_y);//single
+//		my_putchar('\n');
+//		turn_led(0);
 	}
 
-
+	else
+	{
+		turn_led(10);
+	}
 	*_angle_z=angle_z;
 
 }
@@ -393,7 +396,6 @@ void show_mpu(){
 
 	}
 	a=1;
-
 	mpu9150_fuse_data(OF_X,OF_Y,OF_Z,&f_x,&f_y,&f_z);
 	my_put_int(mpu9150_make_zero_degree(180,f_x));
 	my_putchar('\t');

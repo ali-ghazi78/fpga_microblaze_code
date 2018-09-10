@@ -168,8 +168,8 @@ int main(void)
 	int ack=0;
 	while(1){
 
-		show_mpu();
-	//	mpu9150_mag_calibrate();
+	//	show_mpu();
+		mpu9150_mag_calibrate();
 	}
 	return 0;
 

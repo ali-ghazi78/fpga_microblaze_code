@@ -51,7 +51,7 @@
 #define min_y (-360+FIRST_NAGATIVE_Y_NUM)
 #define min_z -384
 #define max_x 72 //112
-#define max_y 60 //96
+#define max_y 55 //96
 #define max_z 89 //85
 
 

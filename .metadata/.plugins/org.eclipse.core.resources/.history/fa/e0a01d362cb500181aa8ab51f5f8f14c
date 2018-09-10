@@ -91,6 +91,8 @@ void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z)
 
 	mpu9150_degree_mag(&T1);
 	int angle_mag_z=T1;
+	my_put_int(angle_mag_z);
+	my_putchar('\t');
 	g_x=(float)mpu9150_get_gyro_x()-OFF_X;
 	g_y=(float)mpu9150_get_gyro_y()-OFF_Y;
 	g_z=(float)mpu9150_get_gyro_z()-OFF_Z;
@@ -185,6 +187,8 @@ void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z)
 		else
 			fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+angle_mag_z*CO_B;
 	}
+	my_put_int(fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+angle_mag_z*CO_B);
+	my_putchar('\t');
 	//
 //	    fused_y=(((float)g_y*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*.98+deg_accel_y_2*.02;
 //	    fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*.98+deg_accel_z_2*.02;
@@ -309,11 +313,7 @@ void mpu9150_degree_mag(int *_angle_z)
 //		my_put_int(mag_y);//single
 //		my_putchar('\t');
 //		turn_led(0);
-//		my_put_int(mag_x);//single
-//		my_putchar('\t');
-//
-//		my_put_int(mag_y);//single
-//		my_putchar('\t');
+
 		if(mag_y<0)
 			mag_y=mag_y+FIRST_NAGATIVE_Y_NUM;//this is the first negative number after zero
 		if(mag_x<0)
@@ -372,11 +372,18 @@ void mpu9150_degree_mag(int *_angle_z)
 //		my_put_int(angle_z);//data is ready
 //		my_putchar('\t');
 
+//		my_put_int(mag_x);//single
+//		my_putchar('\t');
 
-
+//		my_put_int(mag_y);//single
+//		my_putchar('\n');
+//		turn_led(0);
 	}
 
-
+	else
+	{
+		turn_led(10);
+	}
 	*_angle_z=angle_z;
 
 }
@@ -393,7 +400,6 @@ void show_mpu(){
 
 	}
 	a=1;
-
 	mpu9150_fuse_data(OF_X,OF_Y,OF_Z,&f_x,&f_y,&f_z);
 	my_put_int(mpu9150_make_zero_degree(180,f_x));
 	my_putchar('\t');

@@ -47,11 +47,11 @@
 #define FIRST_NAGATIVE_X_NUM 259
 #define FIRST_NAGATIVE_Y_NUM 259
 
-#define min_x (-349+FIRST_NAGATIVE_X_NUM)
-#define min_y (-360+FIRST_NAGATIVE_Y_NUM)
+#define min_x (-370+FIRST_NAGATIVE_X_NUM)
+#define min_y (-384+FIRST_NAGATIVE_Y_NUM)
 #define min_z -384
-#define max_x 72 //112
-#define max_y 60 //96
+#define max_x 79 //112
+#define max_y 52 //96
 #define max_z 89 //85
 
 

@@ -1,4 +1,4 @@
-23:07:12 **** Auto Build of configuration Debug for project shod_code_3 ****
+00:01:06 **** Auto Build of configuration Debug for project shod_code_3 ****
 make all 
 'Building file: ../src/my_lib/mpu9150.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -6,11 +6,12 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/
 ../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
 ../src/my_lib/mpu9150.c:77:15: warning: unused variable 'deg_accel_z_2' [-Wunused-variable]
 ../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
-../src/my_lib/mpu9150.c:385:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
-../src/my_lib/mpu9150.c:293:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
-../src/my_lib/mpu9150.c:290:13: warning: unused variable 'angle_y' [-Wunused-variable]
-../src/my_lib/mpu9150.c:289:13: warning: unused variable 'angle_x' [-Wunused-variable]
-../src/my_lib/mpu9150.c:288:8: warning: unused variable 'mag_z' [-Wunused-variable]
+../src/my_lib/mpu9150.c:289:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:286:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:285:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:284:8: warning: unused variable 'mag_z' [-Wunused-variable]
+../src/my_lib/mpu9150.c: In function 'show_mpu':
+../src/my_lib/mpu9150.c:407:2: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
 'Finished building: ../src/my_lib/mpu9150.c'
 ' '
 'Building target: shod_code_3.elf'
@@ -21,7 +22,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -ml
 'Invoking: MicroBlaze Print Size'
 mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  30226	    308	   2178	  32712	   7fc8	shod_code_3.elf
+  29898	    308	   2178	  32384	   7e80	shod_code_3.elf
 'Finished building: shod_code_3.elf.size'
 ' '
 'Invoking: Xilinx ELF Check'
@@ -38,5 +39,5 @@ elfcheck passed.
 'Finished building: shod_code_3.elf.elfcheck'
 ' '
 
-23:07:14 Build Finished (took 1s.686ms)
+00:01:07 Build Finished (took 1s.709ms)
 
