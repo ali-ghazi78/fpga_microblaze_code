@@ -1,0 +1,6 @@
+19:22:23 **** Auto Build of project axi2_bsp ****
+make -k all 
+'Finished building libraries'
+
+19:22:23 Build Finished (took 176ms)
+

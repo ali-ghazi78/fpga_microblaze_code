@@ -1,0 +1,6 @@
+17:45:35 **** Auto Build of project bas_beshe6_bsp ****
+make -k all 
+'Finished building libraries'
+
+17:45:35 Build Finished (took 137ms)
+

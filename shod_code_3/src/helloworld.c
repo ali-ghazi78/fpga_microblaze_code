@@ -61,17 +61,6 @@ void MPU9150_setupCompass(){
 
 
 
-#define FIRST_NAGATIVE_X_NUM 259
-#define FIRST_NAGATIVE_Y_NUM 259
-
-#define AA 0x18
-#define min_x (-370+FIRST_NAGATIVE_X_NUM)
-#define min_y (-384+FIRST_NAGATIVE_Y_NUM)
-#define min_z -384
-#define max_x 79 //112
-#define max_y 52 //96
-#define max_z 89 //85
-
 void mpu9150_mag_calibrate()
 {
 	int mag_x=0;
@@ -86,12 +75,12 @@ void mpu9150_mag_calibrate()
 
 	int a=0,b=0;
 	int ack;
-	ack=i2c_master_write_simple(AA,MPU9150_MAGNO_CNTRL,1);//single read mode
+	ack=i2c_master_write_simple(MPU9150_MAGNO_ADDRESS,MPU9150_MAGNO_CNTRL,1);//single read mode
 
 	while((a&1)==0){//wait until stable data receive
-		a=i2c_master_read_simple_1Byte(AA,0x02);
+		a=i2c_master_read_simple_1Byte(MPU9150_MAGNO_ADDRESS,0x02);
 	}
-	b=i2c_master_read_simple_1Byte(AA,0x09);//if overflow occures
+	b=i2c_master_read_simple_1Byte(MPU9150_MAGNO_ADDRESS,0x09);//if overflow occures
 	b=((1<<2)&b)|(b&(1<<3));
 	//b=(b&(1<<3));
 
@@ -154,112 +143,6 @@ void mpu9150_mag_calibrate()
 //	corrected_z = mag_z - offset_z;
 //
 //}
-void mpu9150_degree_mag()
-{
-	float mag_x=0;
-	float mag_y=0;
-	float mag_z=0;
-	static int angle_x=0;
-	static int angle_y=0;
-	static int angle_z=0;
-	int a=0,b=0;
-	int ack;
-	ack=i2c_master_write_simple(AA,MPU9150_MAGNO_CNTRL,1);//single read mode
-
-
-	while((a&1)==0){
-		a=i2c_master_read_simple_1Byte(AA,0x02);
-	}
-
-	mag_x=mpu9150_get_mag_x();//single
-	mag_y=mpu9150_get_mag_y();//single
-	mag_z=mpu9150_get_mag_z();//single
-
-	b=i2c_master_read_simple_1Byte(AA,0x09);
-	b=((1<<2)&b)|(b&(1<<3));
-	if(b==0)
-	{
-
-//		my_put_int(mag_x);//single
-//		my_putchar('\t');
-//
-//		my_put_int(mag_y);//single
-//		my_putchar('\t');
-//		turn_led(0);
-
-		if(mag_y<0)
-			mag_y=mag_y+FIRST_NAGATIVE_Y_NUM;//this is the first negative number after zero
-		if(mag_x<0)
-			mag_x=mag_x+FIRST_NAGATIVE_X_NUM;
-
-//		float offset_x = (max_x + min_x) / 2;
-//		float offset_y = (max_y + min_y) / 2;
-//		float offset_z = (max_z + min_z) / 2;
-//
-//		float avg_delta_x = (max_x - min_x) / 2;
-//		float avg_delta_y = (max_y - min_y) / 2;
-//		//float avg_delta_z = (max_z - min_z) / 2;
-//
-//		float avg_delta = (avg_delta_x + avg_delta_y) / 2;
-//
-//		float scale_x = avg_delta / avg_delta_x;
-//		float scale_y = avg_delta / avg_delta_y;
-//		//float scale_z = avg_delta / avg_delta_z;
-//
-//		float corrected_x = (mag_x - offset_x) * scale_x;
-//		float corrected_y = (mag_y - offset_y) * scale_y;
-//		//float corrected_z = (mag_z - offset_z) * scale_z;
-
-		float corrected_x = mag_x /(max_x-min_x);
-		float corrected_y = mag_y /(max_y-min_y);
-		//corrected_z = mag_z - offset_z;
-
-
-//		mag_x=corrected_x;
-//		mag_y=corrected_y;
-//		mag_z=corrected_z;
-
-
-		if((mag_x==0&&mag_y==0))
-			angle_z=0;
-		else
-			angle_z= (atan2(corrected_y,corrected_x)*180/M_PI); //xy plane
-
-//		if((mag_y==0&&mag_z==0))
-//			angle_x=0;
-//		else
-//			angle_x= (atan2(mag_y,mag_z)*180/M_PI);//yz plane
-//
-//		if((mag_x==0&&mag_z==0))
-//			angle_y=0;
-//		else
-//			angle_y= (atan2(mag_x,mag_z)*180/M_PI);//zx plane
-//		angle_z-=40;
-//		angle_x=(angle_x>0)?angle_x:360+angle_x;
-//		angle_y=(angle_y>0)?angle_y:360+angle_y;
-		angle_z=(angle_z>0)?angle_z:360+angle_z;
-
-
-
-		turn_led(1);
-		my_put_int(angle_z);//data is ready
-//		my_putchar('\t');
-
-//		my_put_int(mag_x);//single
-//		my_putchar('\t');
-
-//		my_put_int(mag_y);//single
-		my_putchar('\n');
-		turn_led(0);
-	}
-
-	else
-	{
-		turn_led(10);
-	}
-
-
-}
 int main(void)
 {
 	my_putstr("\nsalam\n");
@@ -270,7 +153,7 @@ int main(void)
 	my_put_int(i2c_master_write_simple(MPU9150_ADDRESS,MPU9150_INT_PIN_CFG,0x02));//enable i2c aux
 	my_putchar('\n');
 	delay_ms(100);
-	my_put_int(i2c_master_read_simple_1Byte(AA,0));//single
+	my_put_int(i2c_master_read_simple_1Byte(MPU9150_MAGNO_ADDRESS,0));//single
 	my_putchar('\n');
 //	my_put_int(i2c_master_write_simple(AA,MPU9150_MAGNO_CNTRL,0x01));//single
 	my_putchar('\n');
@@ -307,32 +190,6 @@ int main(void)
 	}
 	return 0;
 
-}
-
-void show_mpu(){
-	static int a=0;
-	int OF_X,OF_Y,OF_Z;
-	int f_x,f_y,f_z;
-	if(a==0){
-		mpu9150_init();
-		mpu9150_calibrate(&OF_X,&OF_Y,&OF_Z);
-		timer_set_up(5000,LOOP_COUNT);
-
-	}
-	a=1;
-	mpu9150_fuse_data(OF_X,OF_Y,OF_Z,&f_x,&f_y,&f_z);
-	my_put_int(mpu9150_make_zero_degree(180,f_x));
-	my_putchar('\t');
-	my_put_int(mpu9150_make_zero_degree(180,f_y));
-	my_putchar('\t');
-	my_put_int(mpu9150_make_zero_degree(180,f_z));
-	my_putchar('\t');
-
-	my_putchar('\n');
-
-	turn_led(0);
-
-	delay_ms(10);
 }
 #define PIXEL_SIZE 20
 void my_draw(){

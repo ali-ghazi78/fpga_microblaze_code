@@ -1,0 +1,475 @@
+23:16:23.112 INFO  - Project 'llll' created. You can now create BSPs and application projects targeting this hardware platform. 
+17:19:25.690 INFO  - Project 'spartan_6_micro_blaze_' created. You can now create BSPs and application projects targeting this hardware platform. 
+17:28:20.904 ERROR - SDK has detected that project spartan_6_micro_blaze_ has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+17:28:24.651 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/spartan_6_micro_blaze_' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+17:28:24.653 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/spartan_6_micro_blaze_' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+17:28:24.730 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/spartan_6_micro_blaze_' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+17:28:24.731 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/spartan_6_micro_blaze_' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+17:29:00.554 INFO  - Project '3' created. You can now create BSPs and application projects targeting this hardware platform. 
+18:58:18.556 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+18:58:42.007 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+18:59:38.507 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+19:01:14.535 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+19:01:14.536 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+21:04:10.676 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+21:06:55.835 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+21:10:23.333 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+21:23:04.196 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+21:23:04.197 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+21:38:41.931 WARN  - Change BSP handler invoked, but no selected application in workspace. 
+21:38:50.111 ERROR - Cannot configure FPGA without download.bit 
+12:37:00.244 INFO  - Project 'aa' created. You can now create BSPs and application projects targeting this hardware platform. 
+16:04:32.948 INFO  - Project 'spartan6' created. You can now create BSPs and application projects targeting this hardware platform. 
+16:30:40.343 INFO  - Project 'kjh' created. You can now create BSPs and application projects targeting this hardware platform. 
+16:31:04.280 ERROR - SDK has detected that project spartan6 has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+16:31:06.822 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/spartan6' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+16:31:06.824 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/spartan6' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+16:31:07.041 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/spartan6' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+16:31:07.042 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/spartan6' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+16:39:32.133 INFO  - Project kljlkj_bsp was a BSP project. Please update references. 
+16:39:32.133 ERROR - SDK has detected that project kljlkj_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+16:53:07.756 INFO  - Project 'asdasdasd' created. You can now create BSPs and application projects targeting this hardware platform. 
+19:43:30.441 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+20:29:55.706 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/RemoteSystemsTempFiles' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:521)
+
+21:10:39.511 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:10:39.690 ERROR - Unexpected exception while copying binary to target. org.eclipse.rse.services.clientserver.messages.SystemOperationCancelledException: Operation cancelled.
+	at org.eclipse.rse.internal.services.local.files.LocalFileService.upload(LocalFileService.java:691)
+	at com.xilinx.sdk.launch.remote.RSEHelper.copyToTarget(Unknown Source)
+
+21:10:39.698 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Unexpected exception while copying binary to target.
+	at com.xilinx.sdk.launch.remote.internal.RemoteLaunchDelegate.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+
+22:18:15.275 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+22:21:49.466 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:49:52.102 INFO  - Project asdasdasd's source hardware specification located at D:\fpga_project\cpu\21\__xps\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+22:49:53.183 INFO  - Project asdasdasd's source hardware specification location will not be monitored anymore. 
+11:04:39.200 INFO  - Project 'fffff' created. You can now create BSPs and application projects targeting this hardware platform. 
+16:07:51.726 INFO  - Project 'p' created. You can now create BSPs and application projects targeting this hardware platform. 
+16:17:46.072 ERROR - SDK has detected that project fffff has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+16:18:32.175 WARN  - Unexpected exception while copying file F:\xilinx\14.7\ISE_DS\EDK\sw\lib\hwplatform_templates\MicroZed_hw_platform\ps7_summary.html: java.io.FileNotFoundException: F:\xilinx\14.7\ISE_DS\EDK\sw\lib\hwplatform_templates\MicroZed_hw_platform\ps7_summary.html (The system cannot find the file specified) 
+16:19:36.767 INFO  - Project 'aaaaq' created. You can now create BSPs and application projects targeting this hardware platform. 
+01:56:54.055 INFO  - Project aaaaq's source hardware specification located at D:\fpga_project\cpu\22\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+01:57:29.234 INFO  - Project aaaaq's source hardware specification location will not be monitored anymore. 
+03:20:22.327 INFO  - Project 'the_one_that_shoud_work_1' created. You can now create BSPs and application projects targeting this hardware platform. 
+03:38:23.282 INFO  - Project 'the_one_that_shoud_workd_2' created. You can now create BSPs and application projects targeting this hardware platform. 
+21:01:07.583 INFO  - Project the_one_that_shoud_workd_2's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+22:03:54.128 INFO  - Project the_one_that_shoud_workd_2's source hardware specification location will not be monitored anymore. 
+22:05:16.179 INFO  - Project 'the_one_that_worked_prj' created. You can now create BSPs and application projects targeting this hardware platform. 
+04:11:18.503 INFO  - Project the_one_that_worked_prj's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+04:11:46.940 INFO  - Project the_one_that_worked_prj's source hardware specification location will not be monitored anymore. 
+04:58:41.286 INFO  - Project 'the_one_that_worked_3_prj' created. You can now create BSPs and application projects targeting this hardware platform. 
+05:16:20.459 INFO  - Project 'the_worke_4_prj' created. You can now create BSPs and application projects targeting this hardware platform. 
+12:54:51.383 INFO  - Project the_worke_4_prj's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:01:05.527 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml into \the_worke_4_prj\system.xml. 
+13:01:05.527 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \the_worke_4_prj\system.bit. 
+13:01:05.527 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \the_worke_4_prj\system_bd.bmm. 
+13:01:05.683 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:01:08.090 INFO  - Updating hardware inferred compiler options for the_one_worked_4. 
+13:01:08.121 INFO  - Clearing existing target manager status. 
+14:32:45.384 INFO  - Project the_worke_4_prj's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:35:00.493 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml into \the_worke_4_prj\system.xml. 
+14:35:00.493 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \the_worke_4_prj\system.bit. 
+14:35:00.509 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \the_worke_4_prj\system_bd.bmm. 
+14:35:00.587 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:35:09.558 INFO  - Updating hardware inferred compiler options for the_one_worked_4. 
+14:35:09.558 INFO  - Clearing existing target manager status. 
+16:06:55.576 INFO  - Project the_worke_4_prj's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:10:10.727 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml into \the_worke_4_prj\system.xml. 
+16:10:10.729 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \the_worke_4_prj\system.bit. 
+16:10:10.732 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \the_worke_4_prj\system_bd.bmm. 
+16:10:10.825 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:10:18.532 INFO  - Updating hardware inferred compiler options for the_one_worked_4. 
+16:10:18.538 INFO  - Clearing existing target manager status. 
+16:28:37.208 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:46:04.903 INFO  - Project the_worke_4_prj's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:46:06.472 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml into \the_worke_4_prj\system.xml. 
+12:46:06.475 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \the_worke_4_prj\system.bit. 
+12:46:06.477 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \the_worke_4_prj\system_bd.bmm. 
+12:46:06.580 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:46:10.113 INFO  - Updating hardware inferred compiler options for the_one_worked_4. 
+12:46:10.131 INFO  - Clearing existing target manager status. 
+16:40:55.468 INFO  - Project the_worke_4_prj's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+23:52:01.944 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml into \the_worke_4_prj\system.xml. 
+23:52:07.491 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \the_worke_4_prj\system.bit. 
+23:52:21.281 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \the_worke_4_prj\system_bd.bmm. 
+23:52:21.420 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+23:52:23.429 INFO  - Updating hardware inferred compiler options for the_one_worked_4. 
+23:52:23.449 INFO  - Clearing existing target manager status. 
+23:52:23.459 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+02:31:47.858 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+02:31:47.859 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+17:12:01.299 INFO  - Project the_worke_4_prj's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+17:12:02.784 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml into \the_worke_4_prj\system.xml. 
+17:12:02.787 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \the_worke_4_prj\system.bit. 
+17:12:02.789 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \the_worke_4_prj\system_bd.bmm. 
+17:12:02.885 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:12:05.187 INFO  - Updating hardware inferred compiler options for the_one_worked_4. 
+17:12:05.225 INFO  - Clearing existing target manager status. 
+17:12:07.656 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+17:36:24.620 INFO  - Project the_worke_4_prj's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+17:41:22.096 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml into \the_worke_4_prj\system.xml. 
+17:41:22.100 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \the_worke_4_prj\system.bit. 
+17:41:22.102 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \the_worke_4_prj\system_bd.bmm. 
+17:41:22.217 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:41:23.943 INFO  - Updating hardware inferred compiler options for the_one_worked_4. 
+17:41:23.946 INFO  - Clearing existing target manager status. 
+17:41:24.948 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+17:49:05.477 INFO  - Project 'work_5_board' created. You can now create BSPs and application projects targeting this hardware platform. 
+02:44:36.170 INFO  - Project work_5_board's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+02:51:26.742 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml into \work_5_board\system.xml. 
+02:51:26.745 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \work_5_board\system.bit. 
+02:51:26.747 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \work_5_board\system_bd.bmm. 
+02:51:26.852 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+02:51:28.808 INFO  - Updating hardware inferred compiler options for work_5. 
+02:51:28.842 INFO  - Clearing existing target manager status. 
+02:51:31.225 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+02:55:16.343 INFO  - Project '6_board' created. You can now create BSPs and application projects targeting this hardware platform. 
+03:11:20.877 INFO  - Project 6_board's source hardware specification located at D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+03:12:38.797 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.xml into \6_board\system.xml. 
+03:12:43.330 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \6_board\system.bit. 
+03:12:43.541 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \6_board\system_bd.bmm. 
+03:12:43.644 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+03:12:45.375 INFO  - Updating hardware inferred compiler options for 7_vali_ba_6. 
+03:12:45.377 INFO  - Clearing existing target manager status. 
+03:12:45.384 INFO  - Closing and re-opening the MSS file of ther project 7_vali_ba_6_bsp 
+03:12:46.546 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+03:13:47.518 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+03:13:54.651 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system.bit into \6_board\system.bit. 
+03:13:54.661 INFO  - Copied contents of D:\fpga_project\cpu\23\SDK\SDK_Export\hw\system_bd.bmm into \6_board\system_bd.bmm. 
+03:14:05.384 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:03:36.498 INFO  - Project 'first_axi_prj' created. You can now create BSPs and application projects targeting this hardware platform. 
+18:17:27.568 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+18:28:47.049 INFO  - Copied contents of D:\fpga_project\cpu\24_axi\SDK\SDK_Export\hw\system.bit into \first_axi_prj\system.bit. 
+18:28:47.050 INFO  - Copied contents of D:\fpga_project\cpu\24_axi\SDK\SDK_Export\hw\system_bd.bmm into \first_axi_prj\system_bd.bmm. 
+19:00:48.940 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+19:02:42.427 INFO  - Copied contents of D:\fpga_project\cpu\24_axi\SDK\SDK_Export\hw\system.bit into \first_axi_prj\system.bit. 
+19:02:42.429 INFO  - Copied contents of D:\fpga_project\cpu\24_axi\SDK\SDK_Export\hw\system_bd.bmm into \first_axi_prj\system_bd.bmm. 
+19:22:21.200 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+19:22:22.985 INFO  - Copied contents of D:\fpga_project\cpu\24_axi\SDK\SDK_Export\hw\system.bit into \first_axi_prj\system.bit. 
+19:22:22.987 INFO  - Copied contents of D:\fpga_project\cpu\24_axi\SDK\SDK_Export\hw\system_bd.bmm into \first_axi_prj\system_bd.bmm. 
+20:07:31.884 INFO  - Project 'nemidoonm' created. You can now create BSPs and application projects targeting this hardware platform. 
+21:10:45.708 ERROR - Exception while attemping to 'diff' files C:\Users\ali\workspace_fpga_sdk\nemidoonm\system_bd.bmm and D:\fpga_project\cpu\26_axi\SDK\SDK_Export\hw\system_bd.bmm. 
+21:10:45.708 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+21:42:12.673 INFO  - Copied contents of D:\fpga_project\cpu\26_axi\SDK\SDK_Export\hw\system.bit into \nemidoonm\system.bit. 
+21:42:12.685 INFO  - Copied contents of D:\fpga_project\cpu\26_axi\SDK\SDK_Export\hw\system_bd.bmm into \nemidoonm\system_bd.bmm. 
+21:52:11.991 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+21:53:11.406 INFO  - Copied contents of D:\fpga_project\cpu\26_axi\SDK\SDK_Export\hw\system.bit into \nemidoonm\system.bit. 
+21:53:11.408 INFO  - Copied contents of D:\fpga_project\cpu\26_axi\SDK\SDK_Export\hw\system_bd.bmm into \nemidoonm\system_bd.bmm. 
+22:42:51.584 INFO  - Project 'nemidonm2' created. You can now create BSPs and application projects targeting this hardware platform. 
+23:07:50.047 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+23:08:04.814 INFO  - Copied contents of D:\fpga_project\cpu\28_axi\SDK\SDK_Export\hw\system.bit into \nemidonm2\system.bit. 
+23:08:04.816 INFO  - Copied contents of D:\fpga_project\cpu\28_axi\SDK\SDK_Export\hw\system_bd.bmm into \nemidonm2\system_bd.bmm. 
+23:18:35.184 INFO  - Project 'basbeshe_1' created. You can now create BSPs and application projects targeting this hardware platform. 
+23:24:42.477 INFO  - Project basbeshe_1's source hardware specification located at D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+23:27:38.490 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml into \basbeshe_1\system.xml. 
+23:27:38.493 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \basbeshe_1\system.bit. 
+23:27:38.495 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \basbeshe_1\system_bd.bmm. 
+23:27:38.635 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+23:27:40.395 INFO  - Updating hardware inferred compiler options for bas_beshe_1. 
+23:27:40.434 INFO  - Clearing existing target manager status. 
+23:27:41.933 INFO  - Closing and re-opening the MSS file of ther project bas_beshe_1_bsp 
+23:27:43.120 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+23:36:53.124 INFO  - Project basbeshe_1's source hardware specification located at D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+23:40:07.420 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml into \basbeshe_1\system.xml. 
+23:40:07.422 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \basbeshe_1\system.bit. 
+23:40:07.425 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \basbeshe_1\system_bd.bmm. 
+23:40:07.529 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+23:40:09.305 INFO  - Updating hardware inferred compiler options for bas_beshe_1. 
+23:40:09.308 INFO  - Clearing existing target manager status. 
+23:40:09.310 INFO  - Closing and re-opening the MSS file of ther project bas_beshe_1_bsp 
+23:40:10.504 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+00:20:28.809 INFO  - Project basbeshe_1's source hardware specification located at D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+00:49:54.602 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml into \basbeshe_1\system.xml. 
+00:49:54.605 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \basbeshe_1\system.bit. 
+00:49:54.606 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \basbeshe_1\system_bd.bmm. 
+00:49:54.727 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+00:49:56.734 INFO  - Updating hardware inferred compiler options for bas_beshe_1. 
+00:49:56.738 INFO  - Clearing existing target manager status. 
+00:49:56.739 INFO  - Closing and re-opening the MSS file of ther project bas_beshe_1_bsp 
+00:49:57.890 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+01:39:10.593 INFO  - Project basbeshe_1's source hardware specification located at D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+01:41:54.455 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml into \basbeshe_1\system.xml. 
+01:41:54.458 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \basbeshe_1\system.bit. 
+01:41:54.460 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \basbeshe_1\system_bd.bmm. 
+01:41:54.573 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+01:41:56.339 INFO  - Updating hardware inferred compiler options for bas_beshe_1. 
+01:41:56.343 INFO  - Clearing existing target manager status. 
+01:41:56.344 INFO  - Closing and re-opening the MSS file of ther project bas_beshe_1_bsp 
+01:41:57.504 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+02:13:45.972 INFO  - Project basbeshe_1's source hardware specification located at D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+02:18:41.061 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml into \basbeshe_1\system.xml. 
+02:18:41.064 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \basbeshe_1\system.bit. 
+02:18:41.065 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \basbeshe_1\system_bd.bmm. 
+02:18:41.168 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+02:18:42.927 INFO  - Updating hardware inferred compiler options for bas_beshe_1. 
+02:18:42.932 INFO  - Clearing existing target manager status. 
+02:18:42.933 INFO  - Closing and re-opening the MSS file of ther project bas_beshe_1_bsp 
+02:18:44.094 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+03:35:16.676 INFO  - Converting 'microblaze' ELF file 'C:\Users\ali\workspace_fpga_sdk\bas_beshe_1\Debug\bas_beshe_1.elf' into bootable SREC format. 
+03:35:16.788 INFO  - Caching converted image as 'C:\Users\ali\workspace_fpga_sdk\basbeshe_1\cache\bas_beshe_1.elf.srec'. 
+04:42:33.241 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+04:42:33.242 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+18:32:47.285 INFO  - Project basbeshe_1's source hardware specification located at D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+18:33:04.085 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml into \basbeshe_1\system.xml. 
+18:33:04.088 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \basbeshe_1\system.bit. 
+18:33:04.089 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \basbeshe_1\system_bd.bmm. 
+18:33:04.368 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:33:07.053 INFO  - Updating hardware inferred compiler options for bas_beshe_1. 
+18:33:07.069 INFO  - Clearing existing target manager status. 
+18:53:48.274 INFO  - Project basbeshe_1's source hardware specification located at D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+18:56:53.847 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml into \basbeshe_1\system.xml. 
+18:56:53.850 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \basbeshe_1\system.bit. 
+18:56:53.852 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \basbeshe_1\system_bd.bmm. 
+18:56:53.977 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:57:07.058 INFO  - Updating hardware inferred compiler options for bas_beshe_1. 
+18:57:07.078 INFO  - Clearing existing target manager status. 
+19:52:44.062 INFO  - Project 'bas_bashe_2' created. You can now create BSPs and application projects targeting this hardware platform. 
+22:16:21.496 INFO  - Project bas_bashe_2's source hardware specification located at D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+22:20:47.143 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml into \bas_bashe_2\system.xml. 
+22:20:47.152 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \bas_bashe_2\system.bit. 
+22:20:47.154 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \bas_bashe_2\system_bd.bmm. 
+22:20:47.471 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+22:20:49.139 INFO  - Updating hardware inferred compiler options for bas_beshe_2code. 
+22:20:49.143 INFO  - Clearing existing target manager status. 
+22:20:50.145 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+01:41:15.187 INFO  - Project bas_bashe_2's source hardware specification located at D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+01:49:56.686 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.xml into \bas_bashe_2\system.xml. 
+01:49:56.689 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \bas_bashe_2\system.bit. 
+01:49:56.699 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \bas_bashe_2\system_bd.bmm. 
+01:49:57.058 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+01:49:58.764 INFO  - Updating hardware inferred compiler options for bas_beshe_2code. 
+01:49:58.768 INFO  - Clearing existing target manager status. 
+01:49:58.769 INFO  - Closing and re-opening the MSS file of ther project bas_beshe_2code_bsp 
+01:49:58.892 INFO  - Closing and re-opening the MSS file of ther project bas_beshe_2code_bsp 
+01:49:59.011 INFO  - Closing and re-opening the MSS file of ther project bas_beshe_2code_bsp 
+01:50:00.180 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+01:52:10.422 INFO  - Project 'bas_beshe3' created. You can now create BSPs and application projects targeting this hardware platform. 
+02:17:03.369 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+02:17:33.289 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system.bit into \bas_beshe3\system.bit. 
+02:17:33.292 INFO  - Copied contents of D:\fpga_project\cpu\29_axi\SDK\SDK_Export\hw\system_bd.bmm into \bas_beshe3\system_bd.bmm. 
+03:01:43.315 INFO  - Project 'bas_beshe4' created. You can now create BSPs and application projects targeting this hardware platform. 
+03:50:16.197 INFO  - Project bas_beshe4's source hardware specification located at D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+04:53:14.486 INFO  - Copied contents of D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system.xml into \bas_beshe4\system.xml. 
+04:53:14.489 INFO  - Copied contents of D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system.bit into \bas_beshe4\system.bit. 
+04:53:14.490 INFO  - Copied contents of D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system_bd.bmm into \bas_beshe4\system_bd.bmm. 
+04:53:14.640 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+04:53:16.397 INFO  - Updating hardware inferred compiler options for bas_beshe5. 
+04:53:16.401 INFO  - Clearing existing target manager status. 
+04:53:16.402 INFO  - Closing and re-opening the MSS file of ther project bas_beshe5_bsp 
+04:53:16.571 INFO  - Closing and re-opening the MSS file of ther project bas_beshe5_bsp 
+04:53:16.703 INFO  - Closing and re-opening the MSS file of ther project bas_beshe5_bsp 
+04:53:17.797 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+05:05:17.593 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+05:05:17.594 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+14:01:46.593 INFO  - Project bas_beshe4's source hardware specification located at D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:16:29.651 INFO  - Copied contents of D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system.xml into \bas_beshe4\system.xml. 
+14:16:29.653 INFO  - Copied contents of D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system.bit into \bas_beshe4\system.bit. 
+14:16:29.655 INFO  - Copied contents of D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system_bd.bmm into \bas_beshe4\system_bd.bmm. 
+14:16:29.768 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:16:33.320 INFO  - Updating hardware inferred compiler options for bas_beshe5. 
+14:16:33.338 INFO  - Clearing existing target manager status. 
+14:25:35.499 INFO  - Project bas_beshe4's source hardware specification located at D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+15:19:49.429 INFO  - Copied contents of D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system.xml into \bas_beshe4\system.xml. 
+15:19:49.432 INFO  - Copied contents of D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system.bit into \bas_beshe4\system.bit. 
+15:19:49.435 INFO  - Copied contents of D:\fpga_project\cpu\30_axi\SDK\SDK_Export\hw\system_bd.bmm into \bas_beshe4\system_bd.bmm. 
+15:19:49.561 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:20:03.748 INFO  - Updating hardware inferred compiler options for bas_beshe5. 
+15:20:03.766 INFO  - Clearing existing target manager status. 
+15:31:01.144 INFO  - Project 'bas_beshe6' created. You can now create BSPs and application projects targeting this hardware platform. 
+15:37:16.815 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+15:37:42.261 INFO  - Copied contents of D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system.bit into \bas_beshe6\system.bit. 
+15:37:42.262 INFO  - Copied contents of D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system_bd.bmm into \bas_beshe6\system_bd.bmm. 
+16:28:06.453 INFO  - Project bas_beshe6's source hardware specification located at D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:31:26.678 INFO  - Copied contents of D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system.xml into \bas_beshe6\system.xml. 
+16:31:26.683 INFO  - Copied contents of D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system.bit into \bas_beshe6\system.bit. 
+16:31:26.871 INFO  - Copied contents of D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system_bd.bmm into \bas_beshe6\system_bd.bmm. 
+16:31:26.990 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:31:28.741 INFO  - Updating hardware inferred compiler options for bas_beshe_6. 
+16:31:28.745 INFO  - Clearing existing target manager status. 
+16:31:28.746 INFO  - Closing and re-opening the MSS file of ther project bas_beshe6_bsp 
+16:31:28.908 INFO  - Closing and re-opening the MSS file of ther project bas_beshe6_bsp 
+16:31:30.036 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+16:37:53.643 INFO  - Project bas_beshe6's source hardware specification located at D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:41:08.442 INFO  - Copied contents of D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system.xml into \bas_beshe6\system.xml. 
+16:41:08.445 INFO  - Copied contents of D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system.bit into \bas_beshe6\system.bit. 
+16:41:08.447 INFO  - Copied contents of D:\fpga_project\cpu\31_axi\SDK\SDK_Export\hw\system_bd.bmm into \bas_beshe6\system_bd.bmm. 
+16:41:08.638 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:41:10.342 INFO  - Updating hardware inferred compiler options for bas_beshe_6. 
+16:41:10.345 INFO  - Clearing existing target manager status. 
+16:41:10.346 INFO  - Closing and re-opening the MSS file of ther project bas_beshe6_bsp 
+16:41:11.515 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+17:57:42.625 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:07:37.420 INFO  - Project 'shode_prj_1' created. You can now create BSPs and application projects targeting this hardware platform. 
+18:10:45.217 INFO  - Project shode_prj_1's source hardware specification located at D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+18:14:26.475 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml into \shode_prj_1\system.xml. 
+18:14:26.478 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.bit into \shode_prj_1\system.bit. 
+18:14:26.480 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system_bd.bmm into \shode_prj_1\system_bd.bmm. 
+18:14:26.597 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:14:28.356 INFO  - Updating hardware inferred compiler options for shod_code_1. 
+18:14:28.360 INFO  - Clearing existing target manager status. 
+18:14:30.758 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+18:18:43.030 INFO  - Project shode_prj_1's source hardware specification located at D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+18:21:42.295 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml into \shode_prj_1\system.xml. 
+18:21:42.297 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.bit into \shode_prj_1\system.bit. 
+18:21:42.299 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system_bd.bmm into \shode_prj_1\system_bd.bmm. 
+18:21:42.423 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:21:44.164 INFO  - Updating hardware inferred compiler options for shod_code_1. 
+18:21:44.168 INFO  - Clearing existing target manager status. 
+18:21:45.170 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+18:32:40.039 INFO  - Project shode_prj_1's source hardware specification located at D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+18:37:37.230 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml into \shode_prj_1\system.xml. 
+18:37:37.232 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.bit into \shode_prj_1\system.bit. 
+18:37:37.234 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system_bd.bmm into \shode_prj_1\system_bd.bmm. 
+18:37:37.350 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:37:39.098 INFO  - Updating hardware inferred compiler options for shod_code_1. 
+18:37:39.101 INFO  - Clearing existing target manager status. 
+18:37:40.103 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+20:13:27.398 INFO  - Project shode_prj_1's source hardware specification located at D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+20:16:43.681 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml into \shode_prj_1\system.xml. 
+20:16:43.683 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.bit into \shode_prj_1\system.bit. 
+20:16:43.685 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system_bd.bmm into \shode_prj_1\system_bd.bmm. 
+20:16:43.796 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:16:45.541 INFO  - Updating hardware inferred compiler options for shod_code_1. 
+20:16:45.546 INFO  - Clearing existing target manager status. 
+20:16:45.547 INFO  - Closing and re-opening the MSS file of ther project shod_code_1_bsp 
+20:16:46.670 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+21:01:23.864 INFO  - Project shode_prj_1's source hardware specification located at D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+21:04:18.988 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.xml into \shode_prj_1\system.xml. 
+21:04:18.990 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system.bit into \shode_prj_1\system.bit. 
+21:04:18.991 INFO  - Copied contents of D:\fpga_project\cpu\32_axi\SDK\SDK_Export\hw\system_bd.bmm into \shode_prj_1\system_bd.bmm. 
+21:04:19.102 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:04:20.855 INFO  - Updating hardware inferred compiler options for shod_code_1. 
+21:04:20.857 INFO  - Clearing existing target manager status. 
+21:04:21.859 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+22:13:07.569 INFO  - Project 'shod_prj_2' created. You can now create BSPs and application projects targeting this hardware platform. 
+02:43:17.594 INFO  - Project 'shod_prj_3' created. You can now create BSPs and application projects targeting this hardware platform. 
+05:45:52.163 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+05:45:52.164 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 

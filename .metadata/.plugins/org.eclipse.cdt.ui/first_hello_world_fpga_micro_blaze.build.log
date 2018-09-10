@@ -1,0 +1,11 @@
+17:19:55 **** Build of configuration Debug for project first_hello_world_fpga_micro_blaze ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../first_hello_world_fpga_micro_blaze_bsp/microblaze_mcs_v1_4/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+mb-g++: fatal error: '-c' is not a valid option to the preprocessor
+compilation terminated.
+make: *** [src/main.o] Error 1
+
+17:19:55 Build Finished (took 286ms)
+

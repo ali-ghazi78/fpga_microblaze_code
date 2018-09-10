@@ -1,0 +1,6 @@
+17:49:36 **** Build of project the_one_that_sh_work_2_bsp ****
+make -k all 
+'Finished building libraries'
+
+17:49:36 Build Finished (took 275ms)
+

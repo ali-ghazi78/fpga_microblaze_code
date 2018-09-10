@@ -1,0 +1,161 @@
+#include "delay.h"
+#include "i2c_software_master.h"
+#include "led_k.h"
+#define wait_i2c delay_ns(10000)
+//  assign sda_pin=(slv_reg0[31])?1'bz:0;
+//  assign scl_pin=(slv_reg0[30])?1'bz:0;
+//  assign slv_reg_temp[29]=sda_pin;
+//  assign slv_reg_temp[28]=scl_pin;
+
+#define i2c_base_address 0xc7c00000
+
+
+int sda_last=0;
+int scl_last=0;//because i didnt want to declare another register in my edk for i2c
+
+boolean scl_read()
+{
+	return ((I2C_SOFTWARE_MASTER_mReadSlaveReg0(i2c_base_address,I2C_SOFTWARE_MASTER_SLV_REG0_OFFSET)&(1<<3))&&1 );
+}
+
+boolean sda_read()
+{
+	return ((I2C_SOFTWARE_MASTER_mReadSlaveReg0(i2c_base_address,I2C_SOFTWARE_MASTER_SLV_REG0_OFFSET)&(1<<2))&&1);
+}
+void sda_write(boolean val)
+{
+	u32 out=0;
+	if(val)
+		out=
+		(scl_last<<1)|(1<<0);
+	else
+		out=
+		((scl_last<<1)&(~(1<<0)));
+	sda_last=val;
+
+	I2C_SOFTWARE_MASTER_mWriteSlaveReg0(i2c_base_address, I2C_SOFTWARE_MASTER_SLV_REG0_OFFSET, out);
+	delay_ns(10);
+
+}
+void scl_write(boolean val)
+{
+	u32 out=0;
+	if(val)
+		out=
+		(sda_last<<0)|(1<<1);
+	else
+		out=
+		((sda_last<<0)&(~(1<<1)));
+	scl_last=val;
+
+	I2C_SOFTWARE_MASTER_mWriteSlaveReg0(i2c_base_address, I2C_SOFTWARE_MASTER_SLV_REG0_OFFSET, out);
+	delay_ns(10);
+}
+
+
+void i2c_init()
+{
+	sda_write(1);
+	scl_write(1);
+}
+unsigned char  i2c_master_write_simple(u8 slave_address,u8 slave_register,u8 slave_data)
+{
+	unsigned char i2c_status=0;
+	unsigned char counter_data=0;
+	//led=1;
+	scl_write(1);
+	sda_write(1);
+	i2c_status=0;
+	delay_ns(70000);//100khz
+	//-----------------------------start_condition---------------
+	sda_write(0);
+	delay_ns(100);
+	scl_write(1);
+	delay_ns(70000);//100khz
+	//------------------------------------------------------------
+	//---------------------- address msb to lsb-------------------
+	counter_data=8;//because we avoided negative numbers
+	for(;counter_data>=1;counter_data=counter_data-1)
+	{
+		scl_write(0);
+		sda_write(((slave_address&(1<<(counter_data-1)))&&1));
+		delay_ns(70000);//100khz
+		scl_write(1);
+		delay_ns(70000);//100khz
+		if(counter_data==1){
+			sda_write(1);
+		}
+		delay_ns(70000);//100khz
+
+	}
+
+//------------------------------------------------------------
+	if(sda_read()==1)//no ack
+		i2c_status=i2c_status|1;		//address was sent but no ack
+	else
+		i2c_status=i2c_status|2;		//address was sent and ack received
+	scl_write(0);
+	delay_ns(70000);//100khz
+//---------------------- register msb to lsb-------------------
+	counter_data=8;//because we avoided negative numbers
+	for(;counter_data>=1;counter_data=counter_data-1)
+	{
+		scl_write(0);
+		sda_write(((slave_register&(1<<(counter_data-1)))&&1));
+		delay_ns(70000);//100khz
+		scl_write(1);
+		if(counter_data==1){
+			sda_write(1);
+		}
+		delay_ns(70000);//100khz
+	}
+//------------------------------------------------------------
+
+	if(sda_read()==1)//no ack
+		i2c_status=i2c_status|4;		//register was sent but no ack
+	else
+		i2c_status=i2c_status|8;		//register was sent and ack received
+	scl_write(0);
+	delay_ns(70000);//100khz
+//---------------------- data msb to lsb-------------------
+	counter_data=8;//because we avoided negative numbers
+	for(;counter_data>=1;counter_data=counter_data-1)
+	{
+		scl_write(0);
+		sda_write(((slave_data&(1<<(counter_data-1)))&&1));
+		delay_ns(70000);//100khz
+		scl_write(1);
+		if(counter_data==1){
+			sda_write(1);
+		}
+		delay_ns(70000);//100khz
+	}
+//------------------------------------------------------------
+
+	if(sda_read()==1)//no ack
+		i2c_status=i2c_status|16;		//data was sent but no ack
+	else
+		i2c_status=i2c_status|32;		//data was sent and ack received
+	scl_write(0);
+	delay_ns(70000);//100khz
+
+//-----------------------------stop_condition---------------
+	scl_write(0);
+	delay_ns(70000);//100khz
+	sda_write(0);
+	delay_ns(70000);//100khz
+	scl_write(1);
+	delay_ns(100);
+	sda_write(1);
+//-----------------------------------------------------------
+	return i2c_status;
+}
+void i2c_start(){
+	sda_write(1);
+	scl_write(1);
+	wait_i2c;
+	sda_write(0);
+	wait_i2c();
+}
+
+

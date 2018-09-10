@@ -1,0 +1,6 @@
+03:13:54 **** Auto Build of project 7_vali_ba_6_bsp ****
+make -k all 
+'Finished building libraries'
+
+03:13:54 Build Finished (took 138ms)
+

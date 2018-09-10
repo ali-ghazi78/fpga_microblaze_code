@@ -1,0 +1,6 @@
+16:16:35 **** Incremental Build of configuration Debug for project ppp ****
+make all 
+make: *** No rule to make target `usart_selftest.o', needed by `ppp.elf'.  Stop.
+
+16:16:35 Build Finished (took 132ms)
+

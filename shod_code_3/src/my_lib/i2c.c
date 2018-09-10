@@ -1,8 +1,8 @@
 #include "delay.h"
 #include "i2c.h"
 #include "led.h"
-#define wait_i2c delay_ns(1000)
-#define wait_i2c_k delay_ns(300)
+#define wait_i2c delay_ns(1000)//1000
+#define wait_i2c_k delay_ns(50)//300
 //  assign sda_pin=(slv_reg0[31])?1'bz:0;
 //  assign scl_pin=(slv_reg0[30])?1'bz:0;
 //  assign slv_reg_temp[29]=sda_pin;

@@ -1,10 +1,6 @@
 #include "mpu6050.h"
 
-extern counter_mpu;
-
-
-
-
+extern int counter_mpu6050;
 
 
 void mpu6050_init(){
@@ -35,7 +31,7 @@ int mpu6050_get_accel_z(){
 }
 //-------------------------------------------------
 
-float make_zero_degree(int zero,int degree)
+float mpu6050_make_zero_degree(int zero,int degree)
 {
     float x_2;
     if(degree>zero)
@@ -49,17 +45,12 @@ float make_zero_degree(int zero,int degree)
     return x_2;
 
 }
-void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z)
+void mpu6050_fuse_data(int OFF_X,int OFF_Y,int OFF_Z)
 {
 
 	int t_x,t_y,t_z;
 	float CO_A=.98;
 	float CO_B=.02;
-//	float deg_accel_z_2,deg_accel_x_2,deg_accel_y_2;
-//	static float g_x,g_y,g_z;
-//	static float a_x,a_y,a_z;
-//	static float degree_x,degree_y,degree_z;
-//	static float fused_x,fused_y,fused_z;
 
 	int p_x,p_y,p_z;
 	t_x=g_x;
@@ -121,14 +112,14 @@ void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z)
 		if((fused_x-deg_accel_x_2)>180)
 			fused_x=deg_accel_x_2;
 		else
-			fused_x=(((float)g_x*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_x)*CO_A+deg_accel_x_2*CO_B;
+			fused_x=(((float)g_x*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_x)*CO_A+deg_accel_x_2*CO_B;
 	}
 	else if(fused_x<deg_accel_x_2)
 	{
 		if((deg_accel_x_2-fused_x)>180)
 			fused_x=deg_accel_x_2;
 		else
-			fused_x=(((float)g_x*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_x)*CO_A+deg_accel_x_2*CO_B;
+			fused_x=(((float)g_x*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_x)*CO_A+deg_accel_x_2*CO_B;
 
 	}
 	//////////y
@@ -138,14 +129,14 @@ void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z)
 		if((fused_y-deg_accel_y_2)>180)
 			fused_y=deg_accel_y_2;
 		else
-			fused_y=(((float)g_y*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*CO_A+deg_accel_y_2*CO_B;
+			fused_y=(((float)g_y*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*CO_A+deg_accel_y_2*CO_B;
 	}
 	else if(fused_y<deg_accel_y_2)
 	{
 		if((deg_accel_y_2-fused_y)>180)
 			fused_y=deg_accel_y_2;
 		else
-			fused_y=(((float)g_y*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*CO_A+deg_accel_y_2*CO_B;
+			fused_y=(((float)g_y*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*CO_A+deg_accel_y_2*CO_B;
 	}
 	//////////z
 
@@ -154,26 +145,26 @@ void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z)
 		if((fused_z-deg_accel_z_2)>180)
 			fused_z=deg_accel_z_2;
 		else
-			fused_z=(((float)g_z*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+deg_accel_z_2*CO_B;
+			fused_z=(((float)g_z*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+deg_accel_z_2*CO_B;
 	}
 	else if(fused_z<deg_accel_z_2)
 	{
 		if((deg_accel_z_2-fused_z)>180)
 			fused_z=deg_accel_z_2;
 		else
-			fused_z=(((float)g_z*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+deg_accel_z_2*CO_B;
+			fused_z=(((float)g_z*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+deg_accel_z_2*CO_B;
 	}
 
 	//
-	//    fused_y=(((float)g_y*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*.98+deg_accel_y_2*.02;
-	//    fused_z=(((float)g_z*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*.98+deg_accel_z_2*.02;
+	//    fused_y=(((float)g_y*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*.98+deg_accel_y_2*.02;
+	//    fused_z=(((float)g_z*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*.98+deg_accel_z_2*.02;
 
 
-	degree_x+=((float)g_x*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME);
-	degree_y+=((float)g_y*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME);
-	degree_z+=((float)g_z*(float)((long)counter_mpu*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME);
+	degree_x+=((float)g_x*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME);
+	degree_y+=((float)g_y*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME);
+	degree_z+=((float)g_z*(float)((long)counter_mpu6050*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME);
 
-	counter_mpu=0;
+	counter_mpu6050=0;
 	timer_set_up(5000,LOOP_COUNT);
 	timer_on();
 	while((fused_x>360)||(fused_y>360)||(fused_z>360))
@@ -222,15 +213,6 @@ void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z)
 	}
 }
 
-
-
-
-
-
-
-
-
-
 void mpu_calibrate(int *OFFSET_X,int *OFFSET_Y,int *OFFSET_Z)
 {
 	int i=0;
@@ -260,14 +242,5 @@ void mpu_calibrate(int *OFFSET_X,int *OFFSET_Y,int *OFFSET_Z)
 
     delay_ms(500);
     my_putstr("\n----------finish_calibratin-------\n");
-}
-void exception(unsigned char *string,float number,int div)
-{
-
-        my_putstr("\n");
-        my_putstr(string);
-        my_putstr("{");
-        my_put_int(number);
-        my_putstr("}\n");
 }
 

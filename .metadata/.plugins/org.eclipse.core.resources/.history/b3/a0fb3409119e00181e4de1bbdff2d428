@@ -1,0 +1,79 @@
+#include "."
+//
+//
+//u8 i2c_master_write_simple(u8 slave_address,u8 slave_register,u8 slave_data)
+//{
+//	led=1;
+//	scl=z;
+//	sda=z;
+//	i2c_status=0;
+//	delay_ms(10);//1ms
+//	//-----------------------------start_condition---------------
+//	sda=0;
+//	scl=z;
+//	delay_ms(10);//100khz
+//	//------------------------------------------------------------
+//	//---------------------- address msb to lsb-------------------
+//	counter_data=8;//because we avoided negative numbers
+//	for(;counter_data>=1;counter_data=counter_data-1)
+//	{
+//		scl=0;
+//		sda=((slave_address&(1<<(counter_data-1)))&&1)?z:0;
+//		delay_ms(10);//100khz
+//		scl=z;
+//		delay_ms(10);//100khz
+//	}
+////------------------------------------------------------------
+//	if(sda==1)//no ack
+//		i2c_status=i2c_status|1;		//address was sent but no ack
+//	else
+//		i2c_status=i2c_status|2;		//address was sent and ack received
+//	scl=0;
+//	delay_ms(10);//100khz
+////---------------------- register msb to lsb-------------------
+//	counter_data=8;//because we avoided negative numbers
+//	for(;counter_data>=1;counter_data=counter_data-1)
+//	{
+//		scl=0;
+//		sda=((slave_register&(1<<(counter_data-1)))&&1)?z:0;
+//		delay_ms(10);//100khz
+//		scl=z;
+//		delay_ms(10);//100khz
+//	}
+////------------------------------------------------------------
+//	if(sda==1)//no ack
+//		i2c_status=i2c_status|4;		//register was sent but no ack
+//	else
+//		i2c_status=i2c_status|8;		//register was sent and ack received
+//	scl=0;
+//	delay_ms(10);//100khz
+////---------------------- data msb to lsb-------------------
+//	counter_data=8;//because we avoided negative numbers
+//	for(;counter_data>=1;counter_data=counter_data-1)
+//	{
+//		scl=0;
+//		sda=((slave_data&(1<<(counter_data-1)))&&1)?z:0;
+//		delay_ms(10);//100khz
+//		scl=z;
+//		delay_ms(10);//100khz
+//	}
+////------------------------------------------------------------
+//	if(sda==1)//no ack
+//		i2c_status=i2c_status|16;		//data was sent but no ack
+//	else
+//		i2c_status=i2c_status|32;		//data was sent and ack received
+//	scl=0;
+//	delay_ms(10);//100khz
+//
+////-----------------------------stop_condition---------------
+//	scl=0;
+//	delay_ms(10);//100khz
+//	sda=0;
+//	delay_ms(10);//100khz
+//	scl=z;
+//	delay_ns(1);
+//	sda=z;
+////-----------------------------------------------------------
+//}
+//
+//

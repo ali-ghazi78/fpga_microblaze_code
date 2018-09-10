@@ -155,7 +155,9 @@ void SetupInterruptSystem()
 ******************************************************************************/
 void DeviceDriverHandler(void *CallbackRef)
 {
-	counter_mpu++;
+	//counter_mpu6050++;
+	counter_mpu9150++;
+
 	turn_led(200);
 	//delay_ms(1000);
 

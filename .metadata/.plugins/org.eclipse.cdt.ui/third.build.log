@@ -1,0 +1,38 @@
+22:30:02 **** Build of configuration Debug for project third ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../third_bsp/microblaze_mcs_v1_4/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../third_bsp/microblaze_mcs_v1_4/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: third.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../third_bsp/microblaze_mcs_v1_4/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "third.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: third.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size third.elf  |tee "third.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2090	    268	   2090	   4448	   1160	third.elf
+'Finished building: third.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck third.elf -hw ../../3/system.xml -pe microblaze_mcs_v1_4  |tee "third.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../3/system.xml -pe microblaze_mcs_v1_4 third.elf 
+
+ELF file	: third.elf
+elfcheck passed.
+'Finished building: third.elf.elfcheck'
+' '
+
+22:30:04 Build Finished (took 1s.491ms)
+

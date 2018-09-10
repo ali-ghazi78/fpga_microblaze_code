@@ -1,0 +1,6 @@
+23:17:35 **** Build of configuration Debug for project ;;; ****
+make all 
+makefile:38: *** missing rule before commands.  Stop.
+
+23:17:35 Build Finished (took 85ms)
+

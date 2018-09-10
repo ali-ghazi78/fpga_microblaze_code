@@ -1,0 +1,39 @@
+17:27:56 **** Build of configuration Debug for project 2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../2_bsp/microblaze_mcs_v1_4/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../2_bsp/microblaze_mcs_v1_4/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: 2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../2_bsp/microblaze_mcs_v1_4/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size 2.elf  |tee "2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2270	    268	   2084	   4622	   120e	2.elf
+'Finished building: 2.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck 2.elf -hw ../../spartan_6_micro_blaze_/system.xml -pe microblaze_mcs_v1_4  |tee "2.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../spartan_6_micro_blaze_/system.xml -pe
+microblaze_mcs_v1_4 2.elf 
+
+ELF file	: 2.elf
+elfcheck passed.
+'Finished building: 2.elf.elfcheck'
+' '
+
+17:27:58 Build Finished (took 1s.835ms)
+

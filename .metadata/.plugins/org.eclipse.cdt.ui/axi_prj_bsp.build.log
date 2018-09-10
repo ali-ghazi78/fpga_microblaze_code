@@ -1,0 +1,6 @@
+18:44:01 **** Build of project axi_prj_bsp ****
+make -k all 
+'Finished building libraries'
+
+18:44:01 Build Finished (took 138ms)
+

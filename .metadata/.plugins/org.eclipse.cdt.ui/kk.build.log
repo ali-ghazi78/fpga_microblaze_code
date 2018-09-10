@@ -1,0 +1,38 @@
+16:12:20 **** Build of configuration Debug for project kk ****
+make all 
+'Building file: ../src/src/usart_v1_00_a/src/usart.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../kk_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/src/usart_v1_00_a/src/usart.d" -MT"src/src/usart_v1_00_a/src/usart.d" -o "src/src/usart_v1_00_a/src/usart.o" "../src/src/usart_v1_00_a/src/usart.c"
+'Finished building: ../src/src/usart_v1_00_a/src/usart.c'
+' '
+'Building file: ../src/src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../kk_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/src/main.d" -MT"src/src/main.d" -o "src/src/main.o" "../src/src/main.c"
+'Finished building: ../src/src/main.c'
+' '
+'Building target: kk.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kk_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kk.elf"  ./src/src/usart_v1_00_a/src/usart.o  ./src/src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: kk.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size kk.elf  |tee "kk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2270	    268	   2084	   4622	   120e	kk.elf
+'Finished building: kk.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck kk.elf -hw ../../asdasdasd/system.xml -pe microblaze_0  |tee "kk.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../asdasdasd/system.xml -pe microblaze_0 kk.elf 
+
+ELF file	: kk.elf
+elfcheck passed.
+'Finished building: kk.elf.elfcheck'
+' '
+
+16:12:22 Build Finished (took 1s.488ms)
+

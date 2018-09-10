@@ -128,10 +128,11 @@ XStatus USART_TX1_SelfTest(void * baseaddr_p);
 
 void my_put_int( int number);
 unsigned int  my_pow(int base ,int pow);
-void my_putstr(u8 *p);
+void my_putstr(char p[]);
 void usart_putchar(u8 data,u16 prescaler);
 void my_putchar(u8 data);
 u32 usart_get_status();
+void exception(char *string,float number,int div);
 
 
 

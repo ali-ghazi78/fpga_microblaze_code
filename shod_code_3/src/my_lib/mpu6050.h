@@ -10,6 +10,9 @@
 
 #include "i2c.h"
 #include "math.h"
+#include "delay.h"
+#include "usart.h"
+#include "timer.h"
 
 #define GRYRO_SCALE 131
 #define TIME	0.0001	 				//base on ur timer clock 10khz
@@ -51,15 +54,9 @@ int mpu6050_get_gyro_y();
 int mpu6050_get_gyro_x();
 
 char mpu6050_get_name();
-
 void mpu6050_init();
 void mpu_calibrate(int *OFFSET_X,int *OFFSET_Y,int *OFFSET_Z);
-void exception(unsigned char *string,float number,int div);
-float make_zero_degree(int zero,int degree);
-void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z);
-
-
-void mpu_fuse_data(int OFF_X,int OFF_Y,int OFF_Z);
-
+float mpu6050_make_zero_degree(int zero,int degree);
+void mpu6050_fuse_data(int OFF_X,int OFF_Y,int OFF_Z);
 
 #endif /* MPU6050_H_ */

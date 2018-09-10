@@ -1,0 +1,7 @@
+1534061823015	Rename resource 'helloworld.c'
+1534061833221	Rename resource 'usart_hello_world_example'
+1534061979028	Move 'i2c_software_master_selftest.c' to 'i2c'
+1534064912217	Move 'i2c_simple.c' to 'i2c'
+1534064993833	Move 'delay.c' to 'delay'
+1534070666840	Rename resource 'usart_hello_world_example.c'
+1534070673942	Rename resource 'main'

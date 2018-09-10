@@ -1,0 +1,17 @@
+02:43:44 **** Auto Build of configuration Debug for project shod_code_2 ****
+make all 
+'Building file: ../src/my_lib/delay.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -mxl-soft-mul -MMD -MP -MF"src/my_lib/delay.d" -MT"src/my_lib/delay.d" -o "src/my_lib/delay.o" "../src/my_lib/delay.c"
+'Finished building: ../src/my_lib/delay.c'
+' '
+'Building file: ../src/my_lib/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -mxl-soft-mul -MMD -MP -MF"src/my_lib/i2c.d" -MT"src/my_lib/i2c.d" -o "src/my_lib/i2c.o" "../src/my_lib/i2c.c"
+In file included from ../src/my_lib/i2c.c:2:0:
+../src/my_lib/i2c.h:13:26: fatal error: xbasic_types.h: No such file or directory
+compilation terminated.
+make: *** [src/my_lib/i2c.o] Error 1
+
+02:43:44 Build Finished (took 391ms)
+

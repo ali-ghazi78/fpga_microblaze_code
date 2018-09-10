@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;led_v1_00_a&apos; to &apos;src&apos;" description="Move &apos;led_v1_00_a&apos; to &apos;src&apos;" destination="src" element1="/axi_prj_bsp/microblaze_0/led_v1_00_a" element2="/axi_prj_bsp/microblaze_0/usart_v5_00_a" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="2" stamp="1534860537423" updateReferences="true"/>
+</session>

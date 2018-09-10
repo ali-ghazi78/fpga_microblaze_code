@@ -1,0 +1,6 @@
+21:53:11 **** Auto Build of project nemidoonm_1_bsp ****
+make -k all 
+'Finished building libraries'
+
+21:53:11 Build Finished (took 418ms)
+

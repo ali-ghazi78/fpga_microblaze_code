@@ -1,0 +1,6 @@
+00:54:19 **** Build of project nemidoonm2__bsp ****
+make -k all 
+'Finished building libraries'
+
+00:54:19 Build Finished (took 134ms)
+

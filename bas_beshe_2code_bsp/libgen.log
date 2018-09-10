@@ -1,0 +1,11 @@
+Release 14.7 - libgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../bas_bashe_2/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+ERROR:EDK:410 - generic -
+   C:\Users\ali\workspace_fpga_sdk\bas_beshe_2code_bsp\system.mss line 57 - No
+   IP instance named timer_0 is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.

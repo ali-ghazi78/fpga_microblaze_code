@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="305" key="DIALOG_WIDTH"/>
+		<item value="692" key="DIALOG_Y_ORIGIN"/>
+		<item value="718" key="DIALOG_X_ORIGIN"/>
+		<item value="270" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="mpu9150_get_mag_y" key="selection"/>
+		<list key="findhistory">
+			<item value="mpu9150_get_mag_y"/>
+			<item value="mpu9150_degree_mag"/>
+			<item value="void exception(unsigned char "/>
+			<item value="counter_mpu"/>
+			<item value="mpu6050"/>
+			<item value="gyro"/>
+			<item value="ex"/>
+			<item value="exce"/>
+		</list>
+		<list key="replacehistory">
+			<item value="counter_mpu9150"/>
+			<item value="counter_mpu6050"/>
+			<item value="mpu9150"/>
+			<item value="LOOP_COUNT"/>
+			<item value="1000"/>
+			<item value="my_putchar"/>
+			<item value="usart_putchar"/>
+			<item value="timer_currenct_counter"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="362" key="DIALOG_Y_ORIGIN"/>
+		<item value="652" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

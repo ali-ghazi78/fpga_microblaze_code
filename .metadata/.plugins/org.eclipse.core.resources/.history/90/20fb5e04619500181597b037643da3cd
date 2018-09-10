@@ -1,0 +1,6 @@
+#include <stdlib.h>
+#include"usart_v1_00_a/src/usart.h"
+int main()
+{
+	return 0;
+}

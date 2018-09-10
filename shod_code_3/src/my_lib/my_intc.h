@@ -8,7 +8,8 @@
 #include "led.h"
 
 
-int counter_mpu;
+int counter_mpu6050;
+int counter_mpu9150;
 
 /************************ Constant Definitions *****************************/
 

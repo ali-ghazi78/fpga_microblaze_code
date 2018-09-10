@@ -1,0 +1,11 @@
+22:13:52 **** Auto Build of configuration Debug for project shod_code_1 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_1_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:34:26: fatal error: my_lib/delay.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+
+22:13:52 Build Finished (took 191ms)
+

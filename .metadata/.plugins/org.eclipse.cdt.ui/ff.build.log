@@ -1,0 +1,52 @@
+16:12:12 **** Build of configuration Debug for project ff ****
+make all 
+'Building file: ../src/cpu/21/drivers/usart_v1_00_a/src/usart.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ff_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpu/21/drivers/usart_v1_00_a/src/usart.d" -MT"src/cpu/21/drivers/usart_v1_00_a/src/usart.d" -o "src/cpu/21/drivers/usart_v1_00_a/src/usart.o" "../src/cpu/21/drivers/usart_v1_00_a/src/usart.c"
+'Finished building: ../src/cpu/21/drivers/usart_v1_00_a/src/usart.c'
+' '
+'Building file: ../src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ff_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.d" -MT"src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.d" -o "src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.o" "../src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.c"
+../src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.c: In function 'USART_SelfTest':
+../src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.c:45:11: warning: unused variable 'Reg16Value' [-Wunused-variable]
+../src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.c:44:11: warning: unused variable 'Reg8Value' [-Wunused-variable]
+../src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.c:42:11: warning: unused variable 'Index' [-Wunused-variable]
+'Finished building: ../src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ff_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ff_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ff.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ff_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ff.elf"  ./src/cpu/21/drivers/usart_v1_00_a/src/usart.o ./src/cpu/21/drivers/usart_v1_00_a/src/usart_selftest.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ff.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ff.elf  |tee "ff.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2270	    268	   2084	   4622	   120e	ff.elf
+'Finished building: ff.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck ff.elf -hw ../../fffff/system.xml -pe microblaze_0  |tee "ff.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../fffff/system.xml -pe microblaze_0 ff.elf 
+
+ELF file	: ff.elf
+elfcheck passed.
+'Finished building: ff.elf.elfcheck'
+' '
+
+16:12:14 Build Finished (took 1s.788ms)
+

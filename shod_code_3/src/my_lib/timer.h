@@ -126,7 +126,7 @@ void timer_off();
 u16 timer_currenct_counter();
 /**
 *  Defines the number of registers available for read and write*/
-#define TEST_AXI_LITE_USER_NUM_REG 3
+#define TEST_AXI_LITE_USER_NUM_REG_TIMER 3
 
 
 #endif /** TIMER_H */

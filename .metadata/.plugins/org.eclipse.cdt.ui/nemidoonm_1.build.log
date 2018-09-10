@@ -1,0 +1,44 @@
+20:09:42 **** Auto Build of configuration Debug for project nemidoonm_1 ****
+make all 
+'Building file: ../src/led_v1_00_a/src/led.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nemidoonm_1_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/led_v1_00_a/src/led.d" -MT"src/led_v1_00_a/src/led.d" -o "src/led_v1_00_a/src/led.o" "../src/led_v1_00_a/src/led.c"
+'Finished building: ../src/led_v1_00_a/src/led.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nemidoonm_1_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nemidoonm_1_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: nemidoonm_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nemidoonm_1_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "nemidoonm_1.elf"  ./src/led_v1_00_a/src/led.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nemidoonm_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nemidoonm_1.elf  |tee "nemidoonm_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1770	    268	   2090	   4128	   1020	nemidoonm_1.elf
+'Finished building: nemidoonm_1.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nemidoonm_1.elf -hw ../../nemidoonm/system.xml -pe microblaze_0  |tee "nemidoonm_1.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../nemidoonm/system.xml -pe microblaze_0
+nemidoonm_1.elf 
+
+ELF file	: nemidoonm_1.elf
+elfcheck passed.
+'Finished building: nemidoonm_1.elf.elfcheck'
+' '
+
+20:09:44 Build Finished (took 1s.637ms)
+

@@ -1,0 +1,39 @@
+03:24:39 **** Auto Build of configuration Debug for project the_one_that_worked_1 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../the_one_that_worked_1_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:6: warning: unused variable 'i' [-Wunused-variable]
+../src/helloworld.c:50:11: warning: unused variable 'status' [-Wunused-variable]
+../src/helloworld.c: In function 'usart_putchar':
+../src/helloworld.c:60:6: warning: unused variable 'i' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: the_one_that_worked_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../the_one_that_worked_1_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "the_one_that_worked_1.elf"  ./src/helloworld.o ./src/led_k.o ./src/led_k_selftest.o ./src/platform.o ./src/usart.o ./src/usart_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: the_one_that_worked_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size the_one_that_worked_1.elf  |tee "the_one_that_worked_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2282	    268	   2090	   4640	   1220	the_one_that_worked_1.elf
+'Finished building: the_one_that_worked_1.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck the_one_that_worked_1.elf -hw ../../the_one_that_worked_prj/system.xml -pe microblaze_0  |tee "the_one_that_worked_1.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../the_one_that_worked_prj/system.xml -pe
+microblaze_0 the_one_that_worked_1.elf 
+
+ELF file	: the_one_that_worked_1.elf
+elfcheck passed.
+'Finished building: the_one_that_worked_1.elf.elfcheck'
+' '
+
+03:24:40 Build Finished (took 1s.392ms)
+

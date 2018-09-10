@@ -1,0 +1,8 @@
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../work_5_board/system.xml -pe microblaze_0 6.elf 
+
+ELF file	: 6.elf
+elfcheck passed.

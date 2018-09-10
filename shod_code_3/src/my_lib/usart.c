@@ -51,7 +51,7 @@ unsigned int  my_pow(int base ,int pow)
 	}
 	return data;
 }
-void my_putstr(u8 *p)
+void my_putstr(char  p[])
 {
 	int i=0;
 	for(;p[i]!='\0';i++)
@@ -86,3 +86,12 @@ u32 usart_get_status()
 {
 	return USART_TX1_mReadSlaveReg1(USART_BASE_AD,0);
 }
+void exception(char *string,float number,int div)
+{
+		my_putstr("\n");
+        my_putstr(string);
+        my_putstr("{");
+        my_put_int(number);
+        my_putstr("}\n");
+}
+
