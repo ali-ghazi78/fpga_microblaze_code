@@ -134,7 +134,7 @@ void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z)
 
 	deg_accel_x_2=(deg_accel_x_2>0)?deg_accel_x_2:360+deg_accel_x_2;
 	deg_accel_y_2=(deg_accel_y_2>0)?deg_accel_y_2:360+deg_accel_y_2;
-//	deg_accel_z_2=(deg_accel_z_2>0)?deg_accel_z_2:360+deg_accel_z_2;
+	deg_accel_z_2=(deg_accel_z_2>0)?deg_accel_z_2:360+deg_accel_z_2;
 	deg_accel_y_2=360-deg_accel_y_2;
 	//deg_accel_z_2=360-deg_accel_z_2;
 
@@ -187,7 +187,7 @@ void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z)
 		else
 			fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+angle_mag_z*CO_B;
 	}
-	my_put_int(fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+angle_mag_z*CO_B);
+	my_put_int((((float)g_x*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z));
 	my_putchar('\t');
 	//
 //	    fused_y=(((float)g_y*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*.98+deg_accel_y_2*.02;

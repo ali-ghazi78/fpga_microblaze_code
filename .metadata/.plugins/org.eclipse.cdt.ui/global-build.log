@@ -63424,3 +63424,803 @@ f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf
 f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 256 bytes
 collect2: ld returned 1 exit status
 make: *** [shod_code_3.elf] Error 1
+22:23:51 **** Clean-only build of configuration Debug for project shod_code_3 ****
+make clean 
+rm -rf  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu6050.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o  ./src/my_lib/delay.d ./src/my_lib/i2c.d ./src/my_lib/led.d ./src/my_lib/mpu6050.d ./src/my_lib/mpu9150.d ./src/my_lib/my_intc.d ./src/my_lib/timer.d ./src/my_lib/usart.d  ./src/helloworld.d ./src/platform.d  shod_code_3.elf.size  shod_code_3.elf.elfcheck  shod_code_3.elf
+' '
+22:23:51 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/delay.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/delay.d" -MT"src/my_lib/delay.d" -o "src/my_lib/delay.o" "../src/my_lib/delay.c"
+'Finished building: ../src/my_lib/delay.c'
+' '
+'Building file: ../src/my_lib/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/i2c.d" -MT"src/my_lib/i2c.d" -o "src/my_lib/i2c.o" "../src/my_lib/i2c.c"
+'Finished building: ../src/my_lib/i2c.c'
+' '
+'Building file: ../src/my_lib/led.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/led.d" -MT"src/my_lib/led.d" -o "src/my_lib/led.o" "../src/my_lib/led.c"
+'Finished building: ../src/my_lib/led.c'
+' '
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
+../src/my_lib/mpu9150.c:94:6: warning: unused variable 'angle_mag_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:93:6: warning: unused variable 'angle_mag_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:369:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:291:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:288:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:8: warning: variable 'mag_z' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building file: ../src/my_lib/my_intc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/my_intc.d" -MT"src/my_lib/my_intc.d" -o "src/my_lib/my_intc.o" "../src/my_lib/my_intc.c"
+'Finished building: ../src/my_lib/my_intc.c'
+' '
+'Building file: ../src/my_lib/timer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/timer.d" -MT"src/my_lib/timer.d" -o "src/my_lib/timer.o" "../src/my_lib/timer.c"
+'Finished building: ../src/my_lib/timer.c'
+' '
+'Building file: ../src/my_lib/usart.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/usart.d" -MT"src/my_lib/usart.d" -o "src/my_lib/usart.o" "../src/my_lib/usart.c"
+'Finished building: ../src/my_lib/usart.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'mpu9150_mag_calibrate':
+../src/helloworld.c:70:9: warning: type defaults to 'int' in declaration of 'mag_y_max' [-Wimplicit-int]
+../src/helloworld.c:71:9: warning: type defaults to 'int' in declaration of 'mag_z_max' [-Wimplicit-int]
+../src/helloworld.c:73:9: warning: type defaults to 'int' in declaration of 'mag_y_min' [-Wimplicit-int]
+../src/helloworld.c:74:9: warning: type defaults to 'int' in declaration of 'mag_z_min' [-Wimplicit-int]
+../src/helloworld.c:77:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:168:6: warning: unused variable 'ack' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: shod_code_3.elf section `.stack' will not fit in region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl'
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 256 bytes
+collect2: ld returned 1 exit status
+make: *** [shod_code_3.elf] Error 1
+22:24:00 **** Clean-only build of configuration Debug for project shod_code_3 ****
+make clean 
+rm -rf  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o  ./src/my_lib/delay.d ./src/my_lib/i2c.d ./src/my_lib/led.d ./src/my_lib/mpu9150.d ./src/my_lib/my_intc.d ./src/my_lib/timer.d ./src/my_lib/usart.d  ./src/helloworld.d ./src/platform.d  shod_code_3.elf.size  shod_code_3.elf.elfcheck  shod_code_3.elf
+' '
+22:24:01 **** Clean-only build of project shod_code_3_bsp ****
+make -k clean 
+rm -rf microblaze_0
+22:24:01 **** Build of project shod_code_3_bsp ****
+make -k all 
+libgen -hw ../shod_prj_3/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../shod_prj_3/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling intc"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+22:24:14 **** Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/delay.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/delay.d" -MT"src/my_lib/delay.d" -o "src/my_lib/delay.o" "../src/my_lib/delay.c"
+'Finished building: ../src/my_lib/delay.c'
+' '
+'Building file: ../src/my_lib/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/i2c.d" -MT"src/my_lib/i2c.d" -o "src/my_lib/i2c.o" "../src/my_lib/i2c.c"
+'Finished building: ../src/my_lib/i2c.c'
+' '
+'Building file: ../src/my_lib/led.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/led.d" -MT"src/my_lib/led.d" -o "src/my_lib/led.o" "../src/my_lib/led.c"
+'Finished building: ../src/my_lib/led.c'
+' '
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
+../src/my_lib/mpu9150.c:94:6: warning: unused variable 'angle_mag_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:93:6: warning: unused variable 'angle_mag_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:369:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:291:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:288:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:8: warning: variable 'mag_z' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building file: ../src/my_lib/my_intc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/my_intc.d" -MT"src/my_lib/my_intc.d" -o "src/my_lib/my_intc.o" "../src/my_lib/my_intc.c"
+'Finished building: ../src/my_lib/my_intc.c'
+' '
+'Building file: ../src/my_lib/timer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/timer.d" -MT"src/my_lib/timer.d" -o "src/my_lib/timer.o" "../src/my_lib/timer.c"
+'Finished building: ../src/my_lib/timer.c'
+' '
+'Building file: ../src/my_lib/usart.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/usart.d" -MT"src/my_lib/usart.d" -o "src/my_lib/usart.o" "../src/my_lib/usart.c"
+'Finished building: ../src/my_lib/usart.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'mpu9150_mag_calibrate':
+../src/helloworld.c:70:9: warning: type defaults to 'int' in declaration of 'mag_y_max' [-Wimplicit-int]
+../src/helloworld.c:71:9: warning: type defaults to 'int' in declaration of 'mag_z_max' [-Wimplicit-int]
+../src/helloworld.c:73:9: warning: type defaults to 'int' in declaration of 'mag_y_min' [-Wimplicit-int]
+../src/helloworld.c:74:9: warning: type defaults to 'int' in declaration of 'mag_z_min' [-Wimplicit-int]
+../src/helloworld.c:77:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:168:6: warning: unused variable 'ack' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: shod_code_3.elf section `.stack' will not fit in region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl'
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 256 bytes
+collect2: ld returned 1 exit status
+make: *** [shod_code_3.elf] Error 1
+22:24:22 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
+../src/my_lib/mpu9150.c:94:6: warning: unused variable 'angle_mag_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:93:6: warning: unused variable 'angle_mag_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:361:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:283:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:280:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:279:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:278:8: warning: variable 'mag_z' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29978	    308	   2178	  32464	   7ed0	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+22:24:26 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
+../src/my_lib/mpu9150.c:94:6: warning: unused variable 'angle_mag_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:93:6: warning: unused variable 'angle_mag_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:369:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:291:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:288:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:8: warning: variable 'mag_z' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: shod_code_3.elf section `.stack' will not fit in region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl'
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 256 bytes
+collect2: ld returned 1 exit status
+make: *** [shod_code_3.elf] Error 1
+22:45:07 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
+../src/my_lib/mpu9150.c:187:121: error: 'angle_mag_z' undeclared (first use in this function)
+../src/my_lib/mpu9150.c:187:121: note: each undeclared identifier is reported only once for each function it appears in
+../src/my_lib/mpu9150.c:94:6: warning: unused variable 'angle_mag_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:93:6: warning: unused variable 'angle_mag_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c: At top level:
+../src/my_lib/mpu9150.c:282:6: error: conflicting types for 'mpu9150_degree_mag'
+../src/my_lib/mpu9150.h:71:6: note: previous declaration of 'mpu9150_degree_mag' was here
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:369:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:291:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:288:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:8: warning: variable 'mag_z' set but not used [-Wunused-but-set-variable]
+make: *** [src/my_lib/mpu9150.o] Error 1
+22:45:13 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
+../src/my_lib/mpu9150.c:92:2: error: too many arguments to function 'mpu9150_degree_mag'
+../src/my_lib/mpu9150.h:71:6: note: declared here
+../src/my_lib/mpu9150.c:187:121: error: 'angle_mag_z' undeclared (first use in this function)
+../src/my_lib/mpu9150.c:187:121: note: each undeclared identifier is reported only once for each function it appears in
+../src/my_lib/mpu9150.c:94:6: warning: unused variable 'angle_mag_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:93:6: warning: unused variable 'angle_mag_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:369:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:291:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:288:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:8: warning: variable 'mag_z' set but not used [-Wunused-but-set-variable]
+make: *** [src/my_lib/mpu9150.o] Error 1
+22:45:44 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
+../src/my_lib/mpu9150.c:92:2: error: too many arguments to function 'mpu9150_degree_mag'
+../src/my_lib/mpu9150.h:71:6: note: declared here
+../src/my_lib/mpu9150.c:187:121: error: 'angle_mag_z' undeclared (first use in this function)
+../src/my_lib/mpu9150.c:187:121: note: each undeclared identifier is reported only once for each function it appears in
+../src/my_lib/mpu9150.c:94:6: warning: unused variable 'angle_mag_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:93:6: warning: unused variable 'angle_mag_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:369:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:291:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:288:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:8: warning: unused variable 'mag_z' [-Wunused-variable]
+make: *** [src/my_lib/mpu9150.o] Error 1
+22:46:05 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:368:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:290:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:285:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: shod_code_3.elf section `.stack' will not fit in region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl'
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 120 bytes
+collect2: ld returned 1 exit status
+make: *** [shod_code_3.elf] Error 1
+22:47:04 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:368:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:290:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:285:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30022	    308	   2172	  32502	   7ef6	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+22:47:43 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:368:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:290:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:285:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30082	    308	   2178	  32568	   7f38	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+22:47:48 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:368:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:290:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:285:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: shod_code_3.elf section `.stack' will not fit in region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl'
+f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 560 bytes
+collect2: ld returned 1 exit status
+make: *** [shod_code_3.elf] Error 1
+22:47:51 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:368:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:290:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:285:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30082	    308	   2178	  32568	   7f38	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+22:49:33 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:382:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:290:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:285:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30010	    308	   2178	  32496	   7ef0	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+22:51:52 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:383:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:291:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:288:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:286:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30042	    308	   2178	  32528	   7f10	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+22:55:23 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:384:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:292:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:289:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:288:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:287:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30050	    308	   2178	  32536	   7f18	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+22:56:44 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:385:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:293:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:290:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:289:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:288:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30230	    308	   2172	  32710	   7fc6	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+22:58:33 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:385:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:293:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:290:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:289:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:288:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30230	    308	   2172	  32710	   7fc6	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+22:59:31 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:385:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:293:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:290:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:289:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:288:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30198	    308	   2172	  32678	   7fa6	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+23:02:24 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
+../src/my_lib/mpu9150.c:77:15: warning: unused variable 'deg_accel_z_2' [-Wunused-variable]
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:385:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:293:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:290:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:289:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:288:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30098	    308	   2178	  32584	   7f48	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+23:06:48 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'mpu9150_mag_calibrate':
+../src/helloworld.c:70:9: warning: type defaults to 'int' in declaration of 'mag_y_max' [-Wimplicit-int]
+../src/helloworld.c:71:9: warning: type defaults to 'int' in declaration of 'mag_z_max' [-Wimplicit-int]
+../src/helloworld.c:73:9: warning: type defaults to 'int' in declaration of 'mag_y_min' [-Wimplicit-int]
+../src/helloworld.c:74:9: warning: type defaults to 'int' in declaration of 'mag_z_min' [-Wimplicit-int]
+../src/helloworld.c:77:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:168:6: warning: unused variable 'ack' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30098	    308	   2178	  32584	   7f48	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+23:07:12 **** Auto Build of configuration Debug for project shod_code_3 ****
+make all 
+'Building file: ../src/my_lib/mpu9150.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
+../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
+../src/my_lib/mpu9150.c:77:15: warning: unused variable 'deg_accel_z_2' [-Wunused-variable]
+../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
+../src/my_lib/mpu9150.c:385:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:293:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:290:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:289:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:288:8: warning: unused variable 'mag_z' [-Wunused-variable]
+'Finished building: ../src/my_lib/mpu9150.c'
+' '
+'Building target: shod_code_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30226	    308	   2178	  32712	   7fc8	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '

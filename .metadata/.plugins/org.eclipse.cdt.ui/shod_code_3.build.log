@@ -1,26 +1,42 @@
-22:21:45 **** Auto Build of configuration Debug for project shod_code_3 ****
+23:07:12 **** Auto Build of configuration Debug for project shod_code_3 ****
 make all 
 'Building file: ../src/my_lib/mpu9150.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../shod_code_3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/my_lib/mpu9150.d" -MT"src/my_lib/mpu9150.d" -o "src/my_lib/mpu9150.o" "../src/my_lib/mpu9150.c"
 ../src/my_lib/mpu9150.c: In function 'mpu9150_fuse_data':
-../src/my_lib/mpu9150.c:94:6: warning: unused variable 'angle_mag_y' [-Wunused-variable]
-../src/my_lib/mpu9150.c:93:6: warning: unused variable 'angle_mag_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:77:15: warning: unused variable 'deg_accel_z_2' [-Wunused-variable]
 ../src/my_lib/mpu9150.c: In function 'mpu9150_degree_mag':
-../src/my_lib/mpu9150.c:369:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
-../src/my_lib/mpu9150.c:291:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
-../src/my_lib/mpu9150.c:288:13: warning: unused variable 'angle_y' [-Wunused-variable]
-../src/my_lib/mpu9150.c:287:13: warning: unused variable 'angle_x' [-Wunused-variable]
-../src/my_lib/mpu9150.c:286:8: warning: variable 'mag_z' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:385:3: warning: implicit declaration of function 'turn_led' [-Wimplicit-function-declaration]
+../src/my_lib/mpu9150.c:293:6: warning: variable 'ack' set but not used [-Wunused-but-set-variable]
+../src/my_lib/mpu9150.c:290:13: warning: unused variable 'angle_y' [-Wunused-variable]
+../src/my_lib/mpu9150.c:289:13: warning: unused variable 'angle_x' [-Wunused-variable]
+../src/my_lib/mpu9150.c:288:8: warning: unused variable 'mag_z' [-Wunused-variable]
 'Finished building: ../src/my_lib/mpu9150.c'
 ' '
 'Building target: shod_code_3.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu6050.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: shod_code_3.elf section `.stack' will not fit in region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl'
-f:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 256 bytes
-collect2: ld returned 1 exit status
-make: *** [shod_code_3.elf] Error 1
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../shod_code_3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "shod_code_3.elf"  ./src/my_lib/delay.o ./src/my_lib/i2c.o ./src/my_lib/led.o ./src/my_lib/mpu9150.o ./src/my_lib/my_intc.o ./src/my_lib/timer.o ./src/my_lib/usart.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shod_code_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size shod_code_3.elf  |tee "shod_code_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30226	    308	   2178	  32712	   7fc8	shod_code_3.elf
+'Finished building: shod_code_3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck shod_code_3.elf -hw ../../shod_prj_3/system.xml -pe microblaze_0  |tee "shod_code_3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-22:21:46 Build Finished (took 534ms)
+Command Line: elfcheck -hw ../../shod_prj_3/system.xml -pe microblaze_0
+shod_code_3.elf 
+
+ELF file	: shod_code_3.elf
+elfcheck passed.
+'Finished building: shod_code_3.elf.elfcheck'
+' '
+
+23:07:14 Build Finished (took 1s.686ms)
 

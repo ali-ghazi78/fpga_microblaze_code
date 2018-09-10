@@ -79,7 +79,7 @@ void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z)
 	static float a_x,a_y,a_z;
 	static float degree_x,degree_y,degree_z;
 	static float fused_x,fused_y,fused_z;
-	int T1;
+	int T1,T2;
 
 	t_x=g_x;
 	t_y=g_y;
@@ -89,14 +89,13 @@ void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z)
 	p_y=a_y;
 	p_z=a_z;
 
-	mpu9150_degree_mag(&T1);
-	int angle_mag_z=T1;
-	my_put_int(angle_mag_z);
-	my_putchar('\t');
+	mpu9150_degree_mag(&T1,&T2);
+	int angle_mag_x=T1;
+	int angle_mag_y=T2;
+
 	g_x=(float)mpu9150_get_gyro_x()-OFF_X;
 	g_y=(float)mpu9150_get_gyro_y()-OFF_Y;
 	g_z=(float)mpu9150_get_gyro_z()-OFF_Z;
-
 
 	a_x=mpu9150_get_accel_x();
 	a_y=mpu9150_get_accel_y();
@@ -117,10 +116,10 @@ void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z)
 	a_x=a_x*.4+p_x*.6;
 	a_y=a_y*.4+p_y*.6;
 	a_z=a_z*.4+p_z*.6;
-//	if((a_x==0&&a_y==0))
-//		deg_accel_z_2=0;
-//	else
-//		deg_accel_z_2= atan2(a_y,a_x)*180/M_PI; //xy plane
+	if((a_x==0&&a_y==0))
+		deg_accel_z_2=0;
+	else
+		deg_accel_z_2= atan2(a_y,a_x)*180/M_PI; //xy plane
 
 	if((a_y==0&&a_z==0))
 		deg_accel_x_2=0;
@@ -134,9 +133,9 @@ void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z)
 
 	deg_accel_x_2=(deg_accel_x_2>0)?deg_accel_x_2:360+deg_accel_x_2;
 	deg_accel_y_2=(deg_accel_y_2>0)?deg_accel_y_2:360+deg_accel_y_2;
-//	deg_accel_z_2=(deg_accel_z_2>0)?deg_accel_z_2:360+deg_accel_z_2;
+	deg_accel_z_2=(deg_accel_z_2>0)?deg_accel_z_2:360+deg_accel_z_2;
 	deg_accel_y_2=360-deg_accel_y_2;
-	//deg_accel_z_2=360-deg_accel_z_2;
+	deg_accel_z_2=360-deg_accel_z_2;
 
 	timer_off();
 	//////////x
@@ -173,25 +172,24 @@ void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z)
 	}
 	//////////z
 
-	if(fused_z>angle_mag_z)
+	if(fused_z>deg_accel_z_2)
 	{
-		if((fused_z-angle_mag_z)>180)
-			fused_z=angle_mag_z;
+		if((fused_z-deg_accel_z_2)>180)
+			fused_z=deg_accel_z_2;
+		else
+			fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+deg_accel_z_2*CO_B;
+	}
+	else if(fused_z<deg_accel_z_2)
+	{
+		if((deg_accel_z_2-fused_z)>180)
+			fused_z=deg_accel_z_2;
 		else
 			fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+angle_mag_z*CO_B;
 	}
-	else if(fused_z<angle_mag_z)
-	{
-		if((angle_mag_z-fused_z)>180)
-			fused_z=angle_mag_z;
-		else
-			fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+angle_mag_z*CO_B;
-	}
-	my_put_int(fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*CO_A+angle_mag_z*CO_B);
-	my_putchar('\t');
+
 	//
-//	    fused_y=(((float)g_y*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*.98+deg_accel_y_2*.02;
-//	    fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*.98+deg_accel_z_2*.02;
+	//    fused_y=(((float)g_y*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_y)*.98+deg_accel_y_2*.02;
+	//    fused_z=(((float)g_z*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME)+fused_z)*.98+deg_accel_z_2*.02;
 
 
 	degree_x+=((float)g_x*(float)((long)counter_mpu9150*LOOP_COUNT+(timer_currenct_counter()))*(float)TIME);
@@ -368,16 +366,16 @@ void mpu9150_degree_mag(int *_angle_z)
 
 
 
-//		turn_led(1);
-//		my_put_int(angle_z);//data is ready
+		turn_led(1);
+		my_put_int(angle_z);//data is ready
 //		my_putchar('\t');
 
 //		my_put_int(mag_x);//single
 //		my_putchar('\t');
 
 //		my_put_int(mag_y);//single
-//		my_putchar('\n');
-//		turn_led(0);
+		my_putchar('\n');
+		turn_led(0);
 	}
 
 	else

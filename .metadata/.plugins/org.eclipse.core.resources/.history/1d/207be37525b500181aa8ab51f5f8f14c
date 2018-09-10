@@ -68,7 +68,7 @@ void 	mpu9150_init();
 void 	mpu9150_calibrate(int *OFFSET_X,int *OFFSET_Y,int *OFFSET_Z);
 float 	mpu9150_make_zero_degree(int zero,int degree);
 void mpu9150_fuse_data(int OFF_X,int OFF_Y,int OFF_Z,int *f_x,int *f_y,int *f_z);
-void mpu9150_degree_mag(int *_angle_z);
+void mpu9150_degree_mag(int * _angle_x,int * _angle_y);
 void show_mpu();
 
 int mpu9150_get_mag_x();

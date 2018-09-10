@@ -191,6 +191,29 @@ int main(void)
 	return 0;
 
 }
+#define PIXEL_SIZE 20
+void my_draw(){
+
+	u8 pixel[PIXEL_SIZE][PIXEL_SIZE];
+	int i=0,j=0;
+	for(;i<PIXEL_SIZE-1;i++){
+		for(;j<PIXEL_SIZE-1;j++){
+			pixel[i][j]='O';
+		}
+		j=0;
+	}
+	i=0,j=0;
+	for(;i<PIXEL_SIZE-1;i++){
+		for(;j<PIXEL_SIZE-1;j++){
+			my_putchar(pixel[i][j]);
+			my_putchar(' ');
+		}
+		my_putchar('\n');
+		j=0;
+	}
+
+
+}
 
 
 

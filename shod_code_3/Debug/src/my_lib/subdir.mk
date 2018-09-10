@@ -7,7 +7,6 @@ C_SRCS += \
 ../src/my_lib/delay.c \
 ../src/my_lib/i2c.c \
 ../src/my_lib/led.c \
-../src/my_lib/mpu6050.c \
 ../src/my_lib/mpu9150.c \
 ../src/my_lib/my_intc.c \
 ../src/my_lib/timer.c \
@@ -17,7 +16,6 @@ OBJS += \
 ./src/my_lib/delay.o \
 ./src/my_lib/i2c.o \
 ./src/my_lib/led.o \
-./src/my_lib/mpu6050.o \
 ./src/my_lib/mpu9150.o \
 ./src/my_lib/my_intc.o \
 ./src/my_lib/timer.o \
@@ -27,7 +25,6 @@ C_DEPS += \
 ./src/my_lib/delay.d \
 ./src/my_lib/i2c.d \
 ./src/my_lib/led.d \
-./src/my_lib/mpu6050.d \
 ./src/my_lib/mpu9150.d \
 ./src/my_lib/my_intc.d \
 ./src/my_lib/timer.d \
